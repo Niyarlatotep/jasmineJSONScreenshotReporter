@@ -7,7 +7,7 @@ Tested only with protractor.
 In protractor:
 
 ```
-const reporter = require('protractor-jasmine2-screenshot-reporter');
+const reporter = require('jasmineJSONScreenshotReporter');
 exports.config = {  
   onPrepare: function(){
     jasmine.getEnv().addReporter(reporter);
