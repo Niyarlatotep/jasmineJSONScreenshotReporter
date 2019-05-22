@@ -10,7 +10,7 @@ In protractor:
 const reporter = require('jasmineJSONScreenshotReporter');
 exports.config = {  
   onPrepare: function(){
-    jasmine.getEnv().addReporter(reporter);
+    jasmine.getEnv().addReporter(new reporter({}));
   }
 }
 ```
